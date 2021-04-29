@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>el-select不回显问题</title>
+      <link href="2021/04/29/d/"/>
+      <url>2021/04/29/d/</url>
+      
+        <content type="html"><![CDATA[<p>记个在使用el-select组件时遇到的问题，在切换下拉框数据时，选中框的数据不更新。element提供了@change事件使用vm.$forceUpdate() 方法进行强制刷新，就可以把值渲染上去。</p><pre><code class="js">$forceUpdate()</code></pre><pre><code class="js">                  &lt;el-select                    v-model=&quot;price&quot;                    clearable                    placeholder=&quot;请选择&quot;                    @change=&quot;$forceUpdate()&quot;&gt;                    &lt;el-option                      v-for=&quot;(item, index) in menuList&quot;                      :key=&quot;index&quot;                      :label=&quot;item.name&quot;                      :value=&quot;item.id&quot;                    &gt;&lt;/el-option&gt;                  &lt;/el-select&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> element-UI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vue </tag>
+            
+            <tag> element组件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端项目优化</title>
       <link href="2021/04/28/c/"/>
       <url>2021/04/28/c/</url>
